@@ -20,7 +20,7 @@ importeddwgs = collector.OfClass(ImportInstance).ToElements()
 linked, imported = XS[ElementId](), XS[ElementId]()
 
 for i in importeddwgs:
-	if item.IsLinked:
+	if i.IsLinked:
 		linked.Add(i.Id)
 	else:
 		imported.Add(i.Id)
